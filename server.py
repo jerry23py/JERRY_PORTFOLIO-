@@ -10,6 +10,10 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
